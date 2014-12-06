@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "ListTableViewCell.h"
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -22,6 +24,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"list"];
+    return cell;
 }
 
 @end

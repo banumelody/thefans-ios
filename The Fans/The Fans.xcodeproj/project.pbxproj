@@ -14,6 +14,7 @@
 		4529C3A21A32DF70003F2AEE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4529C3A11A32DF70003F2AEE /* Images.xcassets */; };
 		4529C3A51A32DF70003F2AEE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4529C3A31A32DF70003F2AEE /* LaunchScreen.xib */; };
 		4529C3B11A32DF70003F2AEE /* The_FansTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4529C3B01A32DF70003F2AEE /* The_FansTests.m */; };
+		4529C3BC1A32E6D7003F2AEE /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4529C3BB1A32E6D7003F2AEE /* ListTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		4529C3AA1A32DF70003F2AEE /* The FansTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The FansTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4529C3AF1A32DF70003F2AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4529C3B01A32DF70003F2AEE /* The_FansTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_FansTests.m; sourceTree = "<group>"; };
+		4529C3BA1A32E6D7003F2AEE /* ListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
+		4529C3BB1A32E6D7003F2AEE /* ListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				4529C39B1A32DF70003F2AEE /* ViewController.h */,
 				4529C39C1A32DF70003F2AEE /* ViewController.m */,
 				4529C39E1A32DF70003F2AEE /* Main.storyboard */,
+				4529C3BA1A32E6D7003F2AEE /* ListTableViewCell.h */,
+				4529C3BB1A32E6D7003F2AEE /* ListTableViewCell.m */,
 				4529C3A11A32DF70003F2AEE /* Images.xcassets */,
 				4529C3A31A32DF70003F2AEE /* LaunchScreen.xib */,
 				4529C3941A32DF70003F2AEE /* Supporting Files */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4529C39D1A32DF70003F2AEE /* ViewController.m in Sources */,
+				4529C3BC1A32E6D7003F2AEE /* ListTableViewCell.m in Sources */,
 				4529C39A1A32DF70003F2AEE /* AppDelegate.m in Sources */,
 				4529C3971A32DF70003F2AEE /* main.m in Sources */,
 			);
@@ -345,6 +351,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "The Fans/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRANK_LIBRARY_SEARCH_PATHS)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(FRANK_LDFLAGS)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -412,6 +426,7 @@
 				4529C3B61A32DF70003F2AEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4529C3B71A32DF70003F2AEE /* Build configuration list for PBXNativeTarget "The FansTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +435,7 @@
 				4529C3B91A32DF70003F2AEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
